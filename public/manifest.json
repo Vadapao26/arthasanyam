@@ -1,0 +1,18 @@
+{
+  "name": "अर्थसंयम (Arthasanyam)",
+  "short_name": "अर्थसंयम",
+  "description": "100% Offline-First Maharashtrian Jamakharch Ledger & Personal Finance App",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FBF8F5",
+  "theme_color": "#9E3B24",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/warli-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

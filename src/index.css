@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-tandul: #FBF8F5;
+    --primary-geru: #9E3B24;
+    --surface-clay: #F4EBE6;
+    --text-earth: #241916;
+  }
+
+  body {
+    background-color: #FBF8F5;
+    color: #241916;
+    font-family: 'Mukta', 'Hind', 'Nirmala UI', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Yatra One', 'Rozha One', 'Nirmala UI', serif;
+  }
+
+  .font-mono {
+    font-family: 'Space Grotesk', 'Poppins', monospace;
+  }
+}
+
+/* Custom subtle Warli earthen scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EBE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #9E3B24;
+  border-radius: 9999px;
+}

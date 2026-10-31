@@ -1,0 +1,36 @@
+name: Build Portable Offline Bundle & Releases
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-offline-bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production bundle & single-file offline HTML
+        run: npm run build
+
+      - name: Upload Portable Offline App Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: arthasanyam-portable-offline
+          path: |
+            arthasanyam-portable-offline.html
+            Launch-Arthasanyam.bat
+            dist/
