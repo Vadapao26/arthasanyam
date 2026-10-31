@@ -18,11 +18,15 @@
 
 ## 🚀 How Anyone Can Run This on Their PC
 
-### Option 1: Zero-Install Portable Offline File (Instant — No Node.js Required!)
+### Option 1: Native Windows Desktop App (`.exe` — Recommended)
+1. Download [`Arthasanyam.exe`](./Arthasanyam.exe) from this repository or Releases.
+2. Double-click `Arthasanyam.exe` — runs as an isolated desktop app with its own local profile and Warli application icon. Zero installation or internet required.
+
+### Option 2: Zero-Install Portable Offline File (Any Browser / Any OS)
 1. Download [`arthasanyam-portable-offline.html`](./arthasanyam-portable-offline.html) from this repository.
 2. Double-click `arthasanyam-portable-offline.html` to open it in any browser (Chrome, Edge, Brave, Firefox) — works **100% offline in Airplane Mode**!
 
-### Option 2: 1-Click Windows Launcher
+### Option 3: 1-Click Windows Launcher / Developer Mode
 1. Clone or download this repository:
    ```bash
    git clone https://github.com/YOUR_USERNAME/arthasanyam.git
