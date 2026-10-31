@@ -7,8 +7,7 @@
    server calls are permitted."
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="in.maharashtra.arthasanyam.offline">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Explicitly strip any transitive INTERNET or NETWORK permissions -->
     <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
